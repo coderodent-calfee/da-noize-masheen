@@ -10,6 +10,14 @@
       "StackName": "amplify-danoizemasheen-dev-160317",
       "StackId": "arn:aws:cloudformation:us-east-2:263637746340:stack/amplify-danoizemasheen-dev-160317/9e61ece0-d503-11ee-b089-02b2aab20e33",
       "AmplifyAppId": "d3tk918026xq6b"
+    },
+    "categories": {
+      "auth": {
+        "danoizemasheendd9b6e53": {}
+      },
+      "api": {
+        "danoizemasheen": {}
+      }
     }
   }
 }

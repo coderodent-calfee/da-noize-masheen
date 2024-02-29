@@ -1,12 +1,18 @@
-﻿/**
- * This file is about
+﻿/*
+ * This file is the entry to the main application
  *
  */
 import React, { useState } from 'react';
-import logo from "../logo.svg";
 import {Link} from "react-router-dom";
 
-function Main(props) {
+import { Amplify } from 'aws-amplify';
+import type { WithAuthenticatorProps } from '@aws-amplify/ui-react';
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+import config from '../amplifyconfiguration.json';
+Amplify.configure(config);
+
+export function Main({ signOut, user }: WithAuthenticatorProps) {
     return (
         <header className="App-header main-page">
             <p id="pageHeader">
@@ -30,4 +36,4 @@ function Main(props) {
 }
 
 // Export out the React Component
-export default Main;
+export default withAuthenticator(Main);
