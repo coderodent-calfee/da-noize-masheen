@@ -95,8 +95,8 @@
 }
 .buttons-container{
     display: grid;
-    grid-template-columns:  repeat(auto-fill, 128px );
-    grid-template-rows: repeat(auto-fit, 128px );
+    grid-template-columns:  repeat(auto-fill, 178px );
+    grid-template-rows: repeat(auto-fit, 178px );
     gap: 8px;
     div {
         background-color: darkgray;
@@ -111,7 +111,6 @@
     background: hsl(340deg 100% 32%);
     border-radius: 12px;
     border-style: inset;
-    width: 100%;
     transform: translateY(-10px);
 }
 
@@ -127,8 +126,9 @@
     border-style: ridge;
     img {
         margin: 4px 0px 0px 0px;
-        width: 60%;
-        height: 60%;
+        width: auto;
+        height: 128px;
+        background-size: 128 128;
     }
     
 }
