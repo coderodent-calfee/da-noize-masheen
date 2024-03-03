@@ -5,7 +5,7 @@
 import React, {useState, useEffect, useReducer} from 'react';
 import {Link, Navigate} from 'react-router-dom';
 
-function Test({data, setData }) {
+function Test({data, setData}) {
     useEffect(() => {
         console.log("useEffect");
     }, []);
@@ -23,14 +23,38 @@ function Test({data, setData }) {
             </div>
             <div className="test-main">
                 <div className="buttons-container grid-style ">
-                    <div>0</div>
+                    <div>
+                        0
+                    </div>
                     <div>1</div>
-                    <div>2</div>
+                    <div>
+                        <button className="pushable">
+                          <span className="front">Revolver
+                            <img src="/icons/revolver-gun-svgrepo-com.svg" alt="revolver-gun-svgrepo-com.svg" />
+                          </span>
+                        </button>
+                    </div>
                     <div>3</div>
                     <div>4</div>
-                    <div>5</div>
+                    <div>
+                        <div>
+                            <button className="pushable">
+                          <span className="front">Revolver
+                            <img src="/icons/revolver-gun-svgrepo-com.svg" alt="revolver-gun-svgrepo-com.svg"/>
+                          </span>
+                            </button>
+                        </div>
+                    </div>
                     <div>6</div>
-                    <div>7</div>
+                    <div>
+                        <div>
+                            <button className="pushable">
+                          <span className="front">Revolver
+                            <img src="/icons/revolver-gun-svgrepo-com.svg" alt="revolver-gun-svgrepo-com.svg"/>
+                          </span>
+                            </button>
+                        </div>
+                    </div>
                     <div>8</div>
                     <div>9</div>
                     <div>10</div>

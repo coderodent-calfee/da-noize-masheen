@@ -25,16 +25,12 @@
 .test-container{
     min-height: 100vh;
     display: grid;
-    grid-template-columns:  128px auto;
+    grid-template-columns:  256px auto;
     grid-template-rows: min-content auto min-content;
     gap: 4px;
     margin: 0;
     div {
         background-color: gray;
-        img {
-            width: 128px;
-            max-height: 128px; 
-        }
     }
     grid-template-areas: 
     "icon header"
@@ -57,20 +53,6 @@
     grid-area: footer;
 }
 
-.buttons-container{
-    display: grid;
-    grid-template-columns:  repeat(auto-fill, 128px );
-    grid-template-rows: repeat(auto-fit, 128px );
-    gap: 4px;
-    margin: 0;
-    div {
-        background-color: darkgray;
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-}
 
 
 #pageHeader {
@@ -88,7 +70,7 @@
 #mainNav {
     grid-area: nav;
     display: grid;
-    grid-template-rows: min-content;
+    grid-template-columns:  repeat(auto-fill, min-content) ;
 
     a {
         color: #FFF;
@@ -111,4 +93,52 @@
         max-height: 100%;
     }
 }
+.buttons-container{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, 128px );
+    grid-template-rows: repeat(auto-fit, 128px );
+    gap: 8px;
+    div {
+        background-color: darkgray;
+    }
+}
 
+/*
+    padding: 4px 4px -16px 4px;
+    margin: 2px 0px 0px 0px;
+ */
+.pushable {
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border-style: inset;
+    width: 100%;
+    transform: translateY(-10px);
+}
+
+/* 
+    margin: 2px 0px 2px 0px;
+
+ */
+.front {
+    display: block;
+    border-radius: 12px;
+    background: hsl(345deg 100% 47%);
+    transform: translateY(-6px);
+    border-style: ridge;
+    img {
+        margin: 4px 0px 0px 0px;
+        width: auto;
+        height: 80px;
+    }
+    
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
+.front {
+    color: white;
+    font-size: 20px;
+
+}
