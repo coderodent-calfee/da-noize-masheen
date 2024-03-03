@@ -2,6 +2,7 @@
     text-align: center;
 }
 
+
 .grid-style {
     background-color: #282c34;
     font-size: calc(10px + 2vmin);
@@ -57,10 +58,9 @@
 }
 
 .buttons-container{
-    min-height: 100vh;
     display: grid;
-    grid-template-columns:  repeat(8, 128px );
-    grid-template-rows: repeat(8, 128px );
+    grid-template-columns:  repeat(auto-fill, 128px );
+    grid-template-rows: repeat(auto-fit, 128px );
     gap: 4px;
     margin: 0;
     div {

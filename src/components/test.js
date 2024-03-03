@@ -16,15 +16,14 @@ function Test({data, setData }) {
                 This is Da Noize Masheen!
             </p>
             <div className="test-icon">
-                <img src="/calm-orc-dj-128.png" alt="dj"/>
+                <img src="/calm-orc-dj-256.png" alt="dj"/>
             </div>
             <div className="test-footer">
                 Footer
             </div>
             <div className="test-main">
                 <div className="buttons-container grid-style ">
-                    <div><img src="/calm-orc-dj-128.png" alt="dj"/>
-                    </div>
+                    <div>0</div>
                     <div>1</div>
                     <div>2</div>
                     <div>3</div>
@@ -33,8 +32,7 @@ function Test({data, setData }) {
                     <div>6</div>
                     <div>7</div>
                     <div>8</div>
-                    <div><img src="/calm-orc-dj-256.png" alt="dj"/>
-                    </div>
+                    <div>9</div>
                     <div>10</div>
                     <div>11</div>
                     <div>12</div>
@@ -43,7 +41,7 @@ function Test({data, setData }) {
                     <div>15</div>
                     <div>16</div>
                     <div>17</div>
-                    <div><img src="/calm-orc-dj-512.png" alt="dj"/></div>
+                    <div>18</div>
                     <div>19</div>
                     <div>20</div>
                     <div>21</div>
