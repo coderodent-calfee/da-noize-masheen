@@ -6,8 +6,11 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 function About(props) {
+
+    console.log("about props", props);
+
     return (
-        <header className="App-header landing-page">
+        <header className="grid-container grid-style about-page">
             <p id="pageHeader">
                 This is Da Noize Masheen!
             </p>
