@@ -16,6 +16,7 @@ function Test({data, setData }) {
                 This is Da Noize Masheen!
             </p>
             <div className="test-icon">
+                <img src="/calm-orc-dj-128.png" alt="dj"/>
             </div>
             <div className="test-footer">
                 Footer
