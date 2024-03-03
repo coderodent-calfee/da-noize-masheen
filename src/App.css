@@ -24,8 +24,8 @@
 .test-container{
     min-height: 100vh;
     display: grid;
-    grid-template-columns:  fit-content(5em) auto;
-    grid-template-rows: min-content min-content 1fr min-content;
+    grid-template-columns:  128px auto;
+    grid-template-rows: min-content auto min-content;
     gap: 4px;
     margin: 0;
     div {
@@ -37,7 +37,6 @@
     }
     grid-template-areas: 
     "icon header"
-    "icon content"
     "nav  content"
     "footer footer";
 }

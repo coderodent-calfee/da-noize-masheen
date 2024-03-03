@@ -15,7 +15,8 @@ function Test({data, setData }) {
             <p className="test-header">
                 This is Da Noize Masheen!
             </p>
-            <div className="test-icon"><img src="/calm-orc-dj.png" alt="dj"/></div>
+            <div className="test-icon">
+            </div>
             <div className="test-footer">
                 Footer
             </div>
