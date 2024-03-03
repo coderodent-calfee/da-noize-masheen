@@ -127,8 +127,8 @@
     border-style: ridge;
     img {
         margin: 4px 0px 0px 0px;
-        width: auto;
-        height: 80px;
+        width: 60%;
+        height: 60%;
     }
     
 }
