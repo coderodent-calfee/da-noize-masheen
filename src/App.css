@@ -56,6 +56,22 @@
     grid-area: footer;
 }
 
+.buttons-container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:  repeat(8, 128px );
+    grid-template-rows: repeat(8, 128px );
+    gap: 4px;
+    margin: 0;
+    div {
+        background-color: darkgray;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
 
 #pageHeader {
     grid-area: header;
