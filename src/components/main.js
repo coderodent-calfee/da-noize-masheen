@@ -24,7 +24,7 @@ export function Main({signOut, user, data, setData }: WithAuthenticatorProps) {
                 <img src="/calm-orc-dj-256.png" alt="dj"/>
             </div>
             <p className="header">
-                This is Da Noize Masheen! <br/> <span>{user.username}</span>
+                This is Da Noize Masheen! <br/> <span>User: {user.username}</span>
             </p>
             <div className="content">
                 <img src="/calm-orc-dj.png" alt="dj"/>
