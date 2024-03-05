@@ -19,23 +19,23 @@ export function Main({signOut, user, data, setData }: WithAuthenticatorProps) {
     setData("signOut", signOut);
     setData("signedOut", false);
     return (
-        <header className="test grid-container grid-style main-page">
-            <p id="pageHeader">
+        <header className="grid-container grid-style main-page">
+            <div className="icon">
+                <img src="/calm-orc-dj-256.png" alt="dj"/>
+            </div>
+            <p className="header">
                 This is Da Noize Masheen! <br/> <span>{user.username}</span>
             </p>
-            <div id="mainArticle">
+            <div className="content">
                 <img src="/calm-orc-dj.png" alt="dj"/>
             </div>
-            <div id="mainNav">
+            <div className="nav">
                 <Link to="/main" className="nav-item">Main</Link>
                 <Link to="/about" className="nav-item">About</Link>
                 <Link to="/test" className="nav-item">Test</Link>
                 <Link to="/signout" className="nav-item">Sign Out</Link>
             </div>
-            <div id="pageFooter">
-                Footer
-            </div>
-            <div id="siteAds">
+            <div className="footer">
                 Main Page
             </div>
         </header>

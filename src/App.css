@@ -12,78 +12,45 @@
 .grid-container {
     min-height: 100vh;
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "nav article ads"
-    "footer footer footer";
-    grid-template-rows: min-content 1fr min-content;
-    grid-template-columns: fit-content(25em) auto auto;
-    grid-gap: 1px;
-    margin: 0;
-}
-
-.test-container{
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns:  256px auto;
-    grid-template-rows: min-content auto min-content;
+    grid-template-columns:  190px auto;
+    grid-template-rows: min-content min-content auto min-content;
     gap: 4px;
-    margin: 0;
-    div {
-        background-color: gray;
-    }
+    margin: 0px 0px 0px 0px;
     grid-template-areas: 
     "icon header"
-    "nav  content"
+    "nav  nav"
+    "content  content"
     "footer footer";
 }
-.test-icon {
+
+.icon {
     grid-area: icon;
 }
 
-.test-header {
+.header {
     grid-area: header;
 }
 
-.test-main {
+.footer {
+    grid-area: footer;
+}
+
+.content {
     grid-area: content;
 }
 
-.test-footer {
-    grid-area: footer;
-}
-
-
-
-#pageHeader {
-    grid-area: header;
-}
-
-#pageFooter {
-    grid-area: footer;
-}
-
-#mainArticle {
-    grid-area: article;
-}
-
-#mainNav {
+.nav {
     grid-area: nav;
     display: grid;
-    grid-template-columns:  repeat(auto-fill, min-content) ;
-
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     a {
         color: #FFF;
     }
-
     a:hover {
         color: #88F
     }
 }
 
-#siteAds {
-    grid-area: ads;
-}
 
 #mainArticle {
     img {
@@ -93,14 +60,30 @@
         max-height: 100%;
     }
 }
+
+.test-container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:  190px auto;
+    grid-template-rows: min-content min-content auto min-content;
+    gap: 4px;
+    margin: 0px 0px 0px 0px;
+    grid-template-areas: 
+    "icon header"
+    "icon header"
+    "nav  content"
+    "footer footer";
+}
+
+
+
+
 .buttons-container{
+    margin: 0px 0px 0px 10px;
     display: grid;
     grid-template-columns:  repeat(auto-fill, 178px );
     grid-template-rows: repeat(auto-fit, 178px );
     gap: 8px;
-    div {
-        background-color: darkgray;
-    }
 }
 
 /*
