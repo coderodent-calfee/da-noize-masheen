@@ -10,10 +10,14 @@ import type {WithAuthenticatorProps} from '@aws-amplify/ui-react';
 import {withAuthenticator} from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import config from '../amplifyconfiguration.json';
+import SoundBoard from "./SoundBoard";
 
 Amplify.configure(config);
 
-export function Main({signOut, user, data, setData }: WithAuthenticatorProps) {
+//<img src="/calm-orc-dj.png" alt="dj"/>
+
+
+export function Main({signOut, user, data, setData}: WithAuthenticatorProps) {
     console.log("main props", data);
 
     setData("signOut", signOut);
@@ -27,7 +31,7 @@ export function Main({signOut, user, data, setData }: WithAuthenticatorProps) {
                 This is Da Noize Masheen! <br/> <span>User: {user.username}</span>
             </p>
             <div className="content">
-                <img src="/calm-orc-dj.png" alt="dj"/>
+                <SoundBoard/>
             </div>
             <div className="nav">
                 <Link to="/main" className="nav-item">Main</Link>

@@ -1,11 +1,9 @@
 ﻿/**
- * This file is a signout component
+ * This file is a Noise Button component
  *
  */
-import React, {useState, useEffect, useReducer} from 'react';
-import {Link, Navigate} from 'react-router-dom';
 
-function NoiseButton({data, setData}) {
+function NoiseButton() {
     return (
         <div>
             <button className="pushable">
@@ -18,4 +16,4 @@ function NoiseButton({data, setData}) {
 }
 
 // Export out the React Component
-export default Test;
+export default NoiseButton;
