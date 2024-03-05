@@ -40,12 +40,11 @@
 }
 
 .nav {
-    background-color: darkgray;
     grid-area: nav;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     a {
-        text-shadow: 2px 2px white;
+        color: white;
     }
 }
 
@@ -125,5 +124,4 @@
 }
 
 a {
-    color: black;
 }
