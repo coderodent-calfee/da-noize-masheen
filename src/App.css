@@ -4,7 +4,7 @@
 
 
 .grid-style {
-    background-color: #282c34;
+    background-color: #192034;
     font-size: calc(10px + 2vmin);
     color: white;
 }
@@ -44,10 +44,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     a {
-        color: #FFF;
-    }
-    a:hover {
-        color: #88F
+        text-shadow: 2px 2px white;
     }
 }
 
