@@ -6,6 +6,8 @@ import React, {useState, useEffect, useReducer} from 'react';
 import {Link, Navigate} from 'react-router-dom';
 
 function Signout({data, setData }) {
+    
+    // this is a local copy of the state; not the actual state
     const [state, dispatch] = useReducer(reducer, data);
     useEffect(() => {
         console.log("dispatch");
@@ -19,12 +21,12 @@ function Signout({data, setData }) {
             if (state.signOut && !state.signedOut) {
                 console.log("reducer: signOut");
                 state.signOut();
-                setData("signedOut", false);
+                setData("signedOut", false); // this updates the global state
             }
             return {
                 ...state,
                 signedOut: true
-            };
+            };// and this only updates the local copy of the state
         }
         throw Error('Unknown action.');
     }

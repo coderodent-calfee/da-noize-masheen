@@ -24,7 +24,7 @@ function Test({data, setData}) {
                 Test Page
             </div>
             <div className="content">
-                <SoundBoard/>
+                <SoundBoard data={data} setData={setData} />
             </div>
             <div className="nav">
                 <Link to="/main" className="nav-item">Main</Link>

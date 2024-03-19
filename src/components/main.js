@@ -22,6 +22,8 @@ export function Main({signOut, user, data, setData}: WithAuthenticatorProps) {
 
     setData("signOut", signOut);
     setData("signedOut", false);
+
+    data.getOrMakeAudioContext();
     return (
         <header className="grid-container grid-style main-page">
             <div className="icon">
@@ -31,7 +33,7 @@ export function Main({signOut, user, data, setData}: WithAuthenticatorProps) {
                 This is Da Noize Masheen! <br/> <span>User: {user.username}</span>
             </p>
             <div className="content">
-                <SoundBoard/>
+                <SoundBoard data={data} setData={setData} />
             </div>
             <div className="nav">
                 <Link to="/main" className="nav-item">Main</Link>
